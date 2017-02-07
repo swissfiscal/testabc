@@ -7,5 +7,5 @@ install: "pip install selenium sauceclient requests robotframework robotframewor
 script: python pyunitttest.py
 addons:
   sauce_connect:
-    username: "Your Sauce Labs username"
-    access_key: "Your Sauce Labs access key"
+    username: "qazp"
+    access_key: "7a182ce9-a60c-4e08-b1c4-88123f2511fd"
