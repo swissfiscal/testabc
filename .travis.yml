@@ -4,7 +4,7 @@ python:
 # command to install dependencies
 install: "pip install selenium sauceclient requests robotframework robotframework-ride robotframework-selenium2library"
 # command to run tests
-script: python pyunitttest.py first_test.py
+script: python pyunitttest.py & python first_test.py
 addons:
   sauce_connect:
     username: "qazp"
