@@ -1,0 +1,6 @@
+*** Settings ***
+Library           TestTravis
+
+*** Test Cases ***
+TestTravis
+    test_two
