@@ -2,7 +2,7 @@ language: python
 python:
   - "2.7"
 # command to install dependencies
-install: "pip install pytest selenium sauceclient requests robotframework robotframework-ride robotframework-selenium2library"
+install: "pip install -U pytest selenium sauceclient requests robotframework robotframework-ride robotframework-selenium2library"
 # command to run tests
 script: echo $PATH && cd /home/travis/build/swissfiscal/testabc/ && dir && pybot TestTravis.txt
 addons:
