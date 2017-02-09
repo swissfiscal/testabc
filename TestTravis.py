@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 import time
 from selenium import webdriver
+from sauceclient import SauceClient
+
 desired_cap = {
     'platform': "Mac OS X 10.9",
     'browserName': "chrome",
@@ -23,3 +25,5 @@ class TestTravis():
         driver.implicitly_wait(30)
         driver.get('http://testadmin.yumimobi.com/index.php/user/login?t=dff78159f3417ea40c2466b8917ad317ff')
         driver.quit()
+		sauce_client = SauceClient("qazp", "7a182ce9-a60c-4e08-b1c4-88123f2511fd")
+		assert 'a'=='b'
