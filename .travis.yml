@@ -4,7 +4,7 @@ python:
 # command to install dependencies
 install: "pip install -U pytest selenium sauceclient requests robotframework robotframework-ride robotframework-selenium2library"
 # command to run tests
-script: export PATH=$PATH:.:/home/travis/virtualenv/python2.7.9/scripts &&dir /home/travis/virtualenv/python2.7.9/ && echo $PATH && cd /home/travis/build/swissfiscal/testabc/ && dir && pybot TestTravis.txt
+script: export PATH=$PATH:.:/home/travis/virtualenv/python2.7.9/scripts &&dir /home/travis/virtualenv/python2.7.9/lib && echo $PATH && cd /home/travis/build/swissfiscal/testabc/ && dir && pybot TestTravis.txt
 addons:
   sauce_connect:
     username: "qazp"
