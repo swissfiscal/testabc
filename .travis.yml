@@ -5,13 +5,6 @@ python:
 install: "pip install -U pytest selenium sauceclient requests robotframework robotframework-ride robotframework-selenium2library"
 # command to run tests
 script: 
-  - "export PYTHONPATH=$PYTHONPATH:.:/home/travis/build/swissfiscal/testabc/"
-  - "export PATH=$PATH:.:/home/travis/virtualenv/python2.7.9/"
-  - "echo $PATH"
-  - "cd /home/travis/build/swissfiscal/testabc/"
-  - "python --version"
-  - "ls -a"
-  - "chmod 777 ./*"
   - "pybot TestTravis.txt"
 addons:
   sauce_connect:
