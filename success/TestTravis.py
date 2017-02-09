@@ -28,6 +28,6 @@ class TestTravis():
         driver.get('http://testadmin.yumimobi.com/index.php/user/login?t=dff78159f3417ea40c2466b8917ad317ff')
         driver.quit()
         sauce_client = SauceClient("qazp", "7a182ce9-a60c-4e08-b1c4-88123f2511fd")
-        assert  'a'=='b'
-        sauce_client.jobs.update_job(driver.session_id, passed=False)
+        assert  'a'=='a'
+        sauce_client.jobs.update_job(driver.session_id, passed=True)
 
