@@ -5,7 +5,7 @@ from selenium import webdriver
 desired_cap = {
     'platform': "Mac OS X 10.9",
     'browserName': "chrome",
-    'version': "31",
+    'version': "55",
 }
 driver = webdriver.Remote(
     command_executor='http://qazp:7a182ce9-a60c-4e08-b1c4-88123f2511fd@ondemand.saucelabs.com:80/wd/hub',
