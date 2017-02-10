@@ -11,3 +11,6 @@ addons:
   sauce_connect:
     username: "qazp"
     access_key: "7a182ce9-a60c-4e08-b1c4-88123f2511fd"
+notifications:
+  slack: yumimobi:y4p5MWgt4ZoA32ixiTWszNTl    
+    
