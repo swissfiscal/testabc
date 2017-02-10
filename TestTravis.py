@@ -25,6 +25,7 @@ class TestTravis():
     def test_two(self):
         # driver = webdriver.Chrome()
         print 'abc'
+		print 'ddd'
         driver.implicitly_wait(30)
         driver.get('http://testadmin.yumimobi.com/index.php/user/login?t=dff78159f3417ea40c2466b8917ad317ff')
         driver.quit()
