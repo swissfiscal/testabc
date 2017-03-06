@@ -20,7 +20,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(True, True)
         print  "测试".decode("utf8")
     def test_something5(self):
-        self.assertAlmostEqual('你好', '你1好')
+        self.assertAlmostEqual('你好', '你好1')
         # print  "测试".decode("utf8")
 
 
