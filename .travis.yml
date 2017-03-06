@@ -7,7 +7,8 @@ install: "pip install -U pytest selenium sauceclient requests robotframework rob
 script:
   - "export PYTHONPATH=$PYTHONPATH:."
 #  - "pybot TestTravis.txt"
-  - "python pyunitttest.py"
+#  - "python pyunitttest.py"
+  - "python Test_Suite_Runner.py"
 notifications:
   slack: yumimobi:y4p5MWgt4ZoA32ixiTWszNTl
 addons:
