@@ -8,6 +8,8 @@ script:
   - "export PYTHONPATH=$PYTHONPATH:."
 #  - "pybot TestTravis.txt"
   - "python pyunitttest.py"
+notifications:
+  slack: yumimobi:y4p5MWgt4ZoA32ixiTWszNTl
 addons:
   sauce_connect:
     username: "qazp"
