@@ -2,13 +2,15 @@ language: python
 python:
   - "2.7"
 # command to install dependencies
-install: "pip install -U pytest selenium sauceclient requests robotframework robotframework-ride robotframework-selenium2library"
+install: "pip install -U pytest"
+#install: "pip install -U pytest selenium sauceclient requests robotframework robotframework-ride robotframework-selenium2library"
 # command to run tests
 script:
   - "export PYTHONPATH=$PYTHONPATH:."
 #  - "pybot TestTravis.txt"
 #  - "python pyunitttest.py"
-  - "python Test_Suite_Runner.py"
+#  - "python Test_Suite_Runner.py"
+  - "pytest"
 notifications:
   slack: yumimobi:y4p5MWgt4ZoA32ixiTWszNTl
 #addons:
