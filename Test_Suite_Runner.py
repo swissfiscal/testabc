@@ -18,4 +18,4 @@ class Test_Suite_Runner(unittest.TestCase):
         #此用法可以同时测试多个类
         suite1 = unittest.TestLoader().loadTestsFromTestCase(MyTestCase)
         suite = unittest.TestSuite([suite1,])
-        unittest.TextTestRunner(verbosity=2).run(suite)
+        unittest.TextTestRunner(verbosity=0).run(suite)
