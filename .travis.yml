@@ -4,9 +4,10 @@ python:
 # command to install dependencies
 install: "pip install -U pytest selenium sauceclient requests robotframework robotframework-ride robotframework-selenium2library"
 # command to run tests
-script: 
+script:
   - "export PYTHONPATH=$PYTHONPATH:."
-  - "pybot TestTravis.txt"
+#  - "pybot TestTravis.txt"
+  - "python pyunittest.py"
 addons:
   sauce_connect:
     username: "qazp"
