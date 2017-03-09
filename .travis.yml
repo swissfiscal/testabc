@@ -10,6 +10,7 @@ script:
 #  - "pybot TestTravis.txt"
 #  - "python pyunitttest.py"
 #  - "python Test_Suite_Runner.py"
-  - sudo pytest Test_Suite_Runner.py
+  - sudo pytest -v Test_Suite_Runner.py
+  - sudo cat logs/myapp.log
 notifications:
   slack: yumimobi:y4p5MWgt4ZoA32ixiTWszNTl
