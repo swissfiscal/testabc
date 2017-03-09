@@ -1,11 +1,14 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import unittest
-
+from BaseClass import *
+from test_aabc import *
+from test_abc import *
+from test_babc import *
 from pyunitttest import MyTestCase
 
 
-class Test_Suite_Runner(unittest.TestCase):
+class Test_Suite_Runner(BaseClass):
     if __name__ == '__main__':
         # 手动构造测试集
         # suite = unittest.TestSuite()
@@ -16,6 +19,8 @@ class Test_Suite_Runner(unittest.TestCase):
 
         #testLoader方式构建测试机
         #此用法可以同时测试多个类
-        suite1 = unittest.TestLoader().loadTestsFromTestCase(MyTestCase)
-        suite = unittest.TestSuite([suite1,])
-        unittest.TextTestRunner(verbosity=0).run(suite)
+        suite1 = unittest.TestLoader().loadTestsFromTestCase(test_aabc)
+        suite2 = unittest.TestLoader().loadTestsFromTestCase(test_abc)
+        suite3 = unittest.TestLoader().loadTestsFromTestCase(test_babc)
+        suite = unittest.TestSuite([suite3,suite2,suite1])
+        unittest.TextTestRunner(verbosity=2).run(suite)
