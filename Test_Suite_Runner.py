@@ -5,7 +5,6 @@ from BaseClass import *
 from test_aabc import *
 from test_abc import *
 from test_babc import *
-from pyunitttest import MyTestCase
 
 
 class Test_Suite_Runner(BaseClass):
